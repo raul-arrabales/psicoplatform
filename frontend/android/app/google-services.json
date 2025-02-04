@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934586878125",
+    "project_id": "psicobotica",
+    "storage_bucket": "psicobotica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934586878125:android:fb6a0ad3dbd2d47e611e24",
+        "android_client_info": {
+          "package_name": "com.psicobotica.psicoboticaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4IGSyp32b6-7AdAH29XO_eTdR5FMDEvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
