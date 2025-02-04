@@ -1,0 +1,32 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "superBotResponses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "superBotName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "creationDateTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "superBotResponses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "superBotName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "creationDateTime",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
