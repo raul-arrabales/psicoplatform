@@ -1,0 +1,2 @@
+Psicobotica Platform - FastAPI Backend v24 
+Raul Arrabales @ psicobotica
