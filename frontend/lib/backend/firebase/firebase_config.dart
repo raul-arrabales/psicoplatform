@@ -5,7 +5,7 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: FirebaseOptions(
-            apiKey: "AIzaSyC9TzPL8apd3mPtAFbEyuDisz02vioeKYE",
+            apiKey: "XXX ROTATED API KEY XXX",
             authDomain: "psicobotica.firebaseapp.com",
             projectId: "psicobotica",
             storageBucket: "psicobotica.appspot.com",
