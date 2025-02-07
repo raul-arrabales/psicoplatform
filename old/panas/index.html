@@ -1,0 +1,595 @@
+<!DOTCTYPE html>
+<html>
+<head>
+
+	<title>Escala de Afecto Positivo y Negativo (PANAS)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="style.css" rel = "stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+	<script src = "md5.js"></script>
+	<script src = "main.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src = "serialize-object.js"></script>
+	
+</head>
+
+<body>
+
+<div id="headpanas">
+<img width="220" class="center" src="psicobotica_header_600.png">
+
+
+<h2 style="text-align: center;">Escala de Afecto Positivo y Negativo (PANAS)</h2>
+
+<p style="text-align: center;">Marque la opción que refleje mejor cómo se ha sentido <b>durante la última semana</b>, incluyendo el día de hoy. Recuerde que <strong>las respuestas son anónimas.</strong></p>
+<hr>
+</div>
+
+<div id="fullForm">
+
+<center>
+<form id="formpanas" name="formpanas">
+
+<!-- One "tab" for each step in the form: -->
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>1. Interesado/a por las cosas.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_1" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_1" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_1" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_1" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_1" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>2. Angustiado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_2" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_2" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_2" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_2" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_2" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>3. Ilusionado/a o emocionado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_3" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_3" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_3" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_3" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_3" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>4. Afectado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_4" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_4" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_4" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_4" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_4" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>5. Fuerte.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_5" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_5" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_5" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_5" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_5" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>6. Culpable.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_6" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_6" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_6" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_6" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_6" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>7. Asustado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_7" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_7" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_7" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_7" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_7" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>8. Agresivo/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_8" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_8" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_8" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_8" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_8" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>9. Entusiasmado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_9" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_9" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_9" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_9" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_9" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>10. Satisfecho/a consigo mismo/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_10" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_10" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_10" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_10" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_10" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>11. Irritable.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_11" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_11" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_11" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_11" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_11" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>12. Despierto/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_12" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_12" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_12" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_12" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_12" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>13. Avergonzado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_13" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_13" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_13" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_13" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_13" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>14. Inspirado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_14" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_14" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_14" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_14" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_14" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>15. Nervioso/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_15" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_15" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_15" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_15" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_15" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>16. Decidido/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_16" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_16" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_16" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_16" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_16" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>17. Concentrado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_17" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_17" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_17" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_17" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_17" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>18. Agitado/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_18" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_18" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_18" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_18" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_18" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>19. Activo/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_19" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_19" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_19" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_19" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_19" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+  <table>
+	<tr><td colspan=5><strong><big>20. Miedoso/a.</big></strong></td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_20" onclick="clearErrors()" value = 1><div></div></label></center></td>		
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_20" onclick="clearErrors()" value = 2><div></div></label></center></td>	
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_20" onclick="clearErrors()" value = 3><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_20" onclick="clearErrors()" value = 4><div></div></label></center></td>
+	<td width=120><center><label><input type = "radio" id = "mc" name = "question_20" onclick="clearErrors()" value = 5><div></div></label></center></td>
+	</tr>
+	<tr>
+	<td style="vertical-align:top" width=120><center><i><b>Nada</b></i>, o muy ligeramente</center></td>		
+	<td style="vertical-align:top" width=120><center><i><b>Un poco</b></i></center></td>	
+	<td style="vertical-align:top" width=120><center><i><b>Moderadamente</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Bastante</b></i></center></td>
+	<td style="vertical-align:top" width=120><center><i><b>Mucho</b></i></center></td>
+	
+	</tr>
+  </table>	
+</div>
+
+<div class="tab">
+    <p style="text-align: center;">Por último, indícanos tus datos demográficos y obtén los resultados:</p>
+  
+	<strong>Edad: </strong><input type="number" name="Age" min="18" max="100" step="1" value="18">
+	<br>&nbsp;<br>
+	<strong>Género: </strong>
+	<select name="Gender" id="Gender">
+	  <option value=2>Mujer</option>
+	  <option value=1>Hombre</option>
+	  <option value=3>Otro</option>
+	</select>
+	<br>&nbsp;<br>
+	<strong>Correo Electrónico:&nbsp;</Strong><input id="input-email" type="text" name="Email" onchange="clearErrors()" >
+	<br>Nunca usaremos tu correo electrónico para enviar comunicaciones comerciales ni para identificar tus respuestas. Lo utilizaremos únicamente para generar un código anónimo y que podamos asociar al mismo usuario los diferentes tests que hagas. 
+	<br>&nbsp;<br>
+	
+	<input type="checkbox" id="Privacidad" name="Privacidad" onclick="clearErrors()" value="Acepta">
+    <label for="Privacidad"> He leído y acepto la <a href="https://www.psicobotica.com/legal-privacidad/" target="_blank">política de privacidad de datos</a>. </label><br>
+	
+    
+	<br>
+
+
+	<input type="hidden" id="AN" name="AN"  value=0>
+	<input type="hidden" id="AP" name="AP"  value=0>
+	<input type="hidden" id="Code" name = "Code" value= "">
+
+<div id="ErrorMsg2"><br>&nbsp;</div>
+
+<div style="overflow:auto;">
+  <div style="float:center;">
+	<button type="submit" id="button_enviar">OBTENER RESULTADOS</button>
+  </div>
+</div>
+	
+</div>
+<div id="ErrorMsg"></div>
+
+<br>
+
+<div style="overflow:auto;">
+  <div style="float:center;">
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+  </div>
+</div>
+
+	
+	<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+
+
+</form>
+</center>
+
+
+</div>
+
+<div id="thanksMsg"></div>
+<div id="results"></div>
+
+<script>
+showTab(currentTab); // Display the current tab
+</script>
+
+<script >
+var $form = $('form#formpanas'),
+    url = 'https://script.google.com/macros/s/AKfycbyj7_4qPu-291HGTa2RAmA7CIdXpAZ70TSE4_4iGjihS6qLWACQ/exec'
+
+$('#button_enviar').on('click', function(e) {
+  e.preventDefault();
+  if (check()) {
+    document.getElementById("fullForm").innerHTML = " ";
+	var jqxhr = $.ajax({
+		url: url,
+		method: "GET",
+		dataType: "json",
+		data: $form.serializeObject(),
+		success: function(response){
+			document.getElementById("fullForm").innerHTML = " ";
+		}
+	});
+	}
+})
+</script>
+
+
+</body>
+
+</html>
