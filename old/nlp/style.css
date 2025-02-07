@@ -1,0 +1,135 @@
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #f1f1f1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#headnlp {
+  width: 80%;
+  margin-right: auto; 
+  margin-left: auto;
+  margin:0 auto;
+  min-width: 420px;
+  max-width: 720px;	
+}
+
+/* Style the form */
+#formnlp {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 40px;
+  width: 80%;
+  min-width: 420px;
+  max-width: 720px;
+}
+
+#thanksMsg {
+  width: 80%;
+  margin-right: auto; 
+  margin-left: auto;
+  margin:0 auto;
+  min-width: 420px;
+  max-width: 720px;	
+}
+
+
+#results {
+  width: 80%;
+  margin-right: auto; 
+  margin-left: auto;
+  margin:0 auto;
+  min-width: 420px;
+  max-width: 720px;	
+  background-color: #ffffff;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 150px;
+  padding-right: 50px;
+  font-size: 17px;
+  line-height: 1.5;
+  display: none;  /* Not visible at the beginning */
+}
+
+/* Style the input fields */
+textarea {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+select {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
